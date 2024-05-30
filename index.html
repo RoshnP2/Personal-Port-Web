@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF - 8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan's Personal Portfolio Website</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/7e52986978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#port">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <div class="header-text">
+            <p>Computer Science Major</p>
+            <h1>Hi, I'm <span>Roshan</span> Patel from <br> Mississippi State University</h1>
+        </div>
+    </div>
+</div>>
+<!----------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="images/sexyman.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-tit">About Me</h1>
+                <p>I am a student at Mississippi State University enrolled in the Bagley College of Engineering. I am currently pursuing a Bachelor of Science degree in Computer Science.
+
+                </p>
+
+                <div class="tab-tit">
+                    <p class="tab-links act-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"> Work Experience/Relative CourseWork</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-cont act-tab" id="skills">
+                    <ul>
+                        <li><span>Python</span><br>Designed Scripts for an Eccommerce Book Store. I created the Inventory/User Scripts.</li>
+                        <li><span>C++/C</span><br>Designed Mini-Games (E.g. Player Guessing Games)</li>
+                        <li><span>HTML/CSS/JS</span><br>Designing Website Interfaces (E.g. Personal Portfolio Website)</li>
+                        <li><span>SQL</span><br>Designed a Database to link for an Ecommerce Book Store. Allowed the user to create, remove, and update stock of the store.</li>
+                    </ul>
+                </div>
+                <div class="tab-cont" id="experience">
+                    <ul>
+                        <li><span>2023-Current</span><br>Pressure Washing for Premier Exterior Cleaning </li>
+                        <li><span>C++</span><br>Data Structures and Analysis of Algorithms </li>
+                        <li><span>Linux C</span><br>Systems Programming </li>
+                        <li><span>C#/Python</span><br>Computer Organization </li>
+                        <li><span>SQL/Python</span><br>Methods & Tools in Software Development </li>
+                        <li><span>Python/C++</span><br>Introduction/Intermediate to Programming </li>
+                        <li><span>Maths</span><br>Discrete Maths/Structures - Calculus I & II & Linear Algebra </li>
+                    </ul>
+                </div>
+                <div class="tab-cont" id="education">
+                    <ul>
+                        <li><span>Ausgust 2021 - May 2022</span><br>East Cental Community College (Basics)</li>
+                        <li><span>August 2022 - May 2026</span><br>Bagley College of Engineering at Mississippi State University </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tit">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Interface Design</h2>
+                <p>Designed this personal portfolio website as personal project during the summer.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scroll"></i>
+                <h2>Creating Scripts</h2>
+                <p>Created scripts for user/inventory for a group project in class. the project was to create an Ecommerce store using an SQL database and link it to python scripts.</p>
+                <a href="">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-dice-six"></i>
+                <h2>Creating Mini-Games</h2>
+                <p>Designed mini guessing games between two players and a ref. Two players play the best of 10 games. The players try to guess the number chosen by the ref at random.</p>
+                <a href="">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------portfolio--------------->
+<div id="port">
+        <div class="container">
+            <h1 class="sub-tit">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>This website serves as my personal resume.
+                        Created a website to display myself. Utilized HTML for the framework. JavaScript made the HTML interactive in the interefact. I utilized CSS to style and design the website.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Python/SQL Scripts</h3>
+                        <p>A program that allows the user to use an online Book Ecommerce store. 
+                        User can add and remove books based on their names or book number. 
+                        User can also check their shopping cart and checkout.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Mini Games</h3>
+                        <p>A few programs based on a one versus one basis. Two players are put into a guessing game.
+                        The two different players play the best of 10 games with the goal of guessing the number chosen by the ref.
+                        Another program game creates ASCII art using colors and the alphabet at random sizes and colors.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" >See More</a>
+        </div>
+</div>
+
+<!---------------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tit">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Roshan0104@outlook.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(662)-736-6830</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/Roshan.p2/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/roshpatel2/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/ResumeDownload.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="'submit-to-google-sheet'">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Roshan. Made with <i class="fa-solid fa-heart"></i> by Roshan S. Patel </p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-cont");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("act-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("act-tab");
+        }
+        event.currentTarget.classList.add("act-link");
+        document.getElementById(tabname).classList.add("act-tab");
+    } 
+
+</script>
+
+<script>
+
+    var sidemen = document.getElementById("sidemenu");
+
+    function openmenu()
+    {
+        sidemen.style.right = "0";
+    }
+    function closemenu()
+    {
+        sidemen.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyQRItPcUguDd_8TmUhz1dDC3WoFrVJsI7KC81q5zxMKWKPWoroIDJKF6935S2hwd0-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
